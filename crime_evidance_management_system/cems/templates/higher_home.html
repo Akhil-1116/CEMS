@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: url('static/a.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            width: 20vw;
+            height: 15vw;
+            margin: 1vw 2vw;
+            background-color: rgba(91, 88, 88, 0.9);
+            color: white;
+            font-weight: bold;
+            font-size: 1.5vw;
+            border-radius: 10vw;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, color 0.3s, font-size 0.3s;
+            text-align: center;
+        }
+        button:hover {
+            background-color: rgba(70, 70, 70, 0.9);
+            transform: scale(1.05);
+            color: #0b0808;
+            font-size: 1.7vw;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.location.href='/viewhipro'">View profile</button>
+    <button onclick="window.location.href='/view'">View case</button>
+    <button onclick="window.location.href='/add_case'">Add new case</button>
+    <button onclick="window.location.href='/edit_case'">Edit case</button>
+    <button onclick="window.location.href='/removecase'">Remove case</button>
+    <button onclick="window.location.href='/reghio'">Register new higher official</button>
+    <button onclick="window.location.href='/regloo'">Register new lower official</button>
+    <button onclick="window.location.href='/remhio'">Remove higher official</button>
+    <button onclick="window.location.href='/remloo'">Remove lower official</button>
+    <button onclick="window.location.href='/hio_changepasss'">Change password</button>
+</body>
+</html>
