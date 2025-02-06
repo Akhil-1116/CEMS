@@ -29,6 +29,8 @@ my_client = MongoClient(connection_string)
 my_db = my_client[database]
 collection = my_db['cases']
 fs = gridfs.GridFS(my_db)  # Initialize GridFS
+const port = process.env.PORT || 4000;
+
 
 # Email Configuration
 SENDER_EMAIL = "princeakhil195@gmail.com"
