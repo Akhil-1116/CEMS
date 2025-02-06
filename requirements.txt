@@ -177,7 +177,6 @@ sympy==1.13.3
 tensorboard==2.17.1
 tensorboard-data-server==0.7.2
 tensorflow==2.17.0
-tensorflow-intel==2.17.0
 termcolor==2.4.0
 threadpoolctl==3.4.0
 toolz==1.0.0
