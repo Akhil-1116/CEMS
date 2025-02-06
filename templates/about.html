@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Evidence Management System</title>
+    <style>
+        /* General Body Styling */
+body {
+    background-color: #0A192F; /* Dark Blue */
+    color: #E0E0E0; /* Silver text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background-color: #112240; /* Slightly lighter Dark Blue */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3); /* Cyan Glow */
+    max-width: 650px;
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    color: #00FFFF; /* Cyan */
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    font-style: italic;
+    color: #B0BEC5;
+}
+
+/* Main Content */
+main p {
+    color: #B0BEC5;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Features Section */
+.features h2 {
+    color: #00FFFF;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.features ul {
+    text-align: left;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.features li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Login Form */
+footer form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00FFFF;
+    border-radius: 5px;
+    background-color: #0A192F;
+    color: #E0E0E0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #00FFFF; /* Cyan */
+    color: #0A192F; /* Dark Blue text for contrast */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #008B8B; /* Darker Cyan */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crime Evidence Management System</h1>
+            <p>Secure | Track | Manage</p>
+        </header>
+        <main>
+            <p>
+                The Crime Evidence Management System is a cutting-edge digital solution designed to simplify and secure the handling of crime-related evidence. Whether you're part of a law enforcement agency, forensic team, or legal institution, this app ensures efficient evidence tracking, secure storage, and seamless case management.
+            </p>
+            <section class="features">
+                <h2>Why Choose This App?</h2>
+                <ul>
+                    <li><strong>🔒 Secure & Tamper-Proof:</strong> Ensures evidence integrity with encryption and access control.</li>
+                    <li><strong>📍 Real-Time Tracking:</strong> Monitor the status and location of evidence at any time.</li>
+                    <li><strong>📂 Seamless Case Management:</strong> Organize case files, upload images, videos, and documents.</li>
+                    <li><strong>🖥️ User-Friendly Interface:</strong> Easy-to-use design for quick access and management.</li>
+                    <li><strong>📜 Automated Logs & Reports:</strong> Maintain a complete audit trail for legal and investigative purposes.</li>
+                </ul>
+            </section>
+            <p>Our mission is to enhance transparency, accuracy, and efficiency in crime investigations by leveraging technology.</p>
+        </main>
+        <footer>
+            <form action="/" method="post">
+                <label for="login">Select role to login:</label>
+                <select name="login" id="login" required>
+                    <option value="" disabled selected>Choose your role</option>
+                    <option value="hlogin">Higher-login</option>
+                    <option value="llogin">Lower-login</option>
+                </select>
+                <button type="submit">Login</button>
+            </form>
+        </footer>
+    </div>
+</body>
+
+</html>

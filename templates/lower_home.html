@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Evidence Management</title>
+    <style>
+        /* Background Styling */
+        body {
+            background-color:  #0A192F;  
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Dark overlay for readability */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+            z-index: -1;
+        }
+
+        /* Button Grid */
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        /* Button Styling */
+        button {
+            background: #008B8B;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            position: relative;
+            height: 200px;
+        }
+
+        /* Hover Effect */
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.5); /* Red glow effect */
+            border-color: yellow;
+        }
+
+        /* Crime Tape Edge Effect */
+        .crime-tape {
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            background: yellow;
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            transform: rotate(-10deg);
+            top: 10%;
+            left: -20%;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Circular Image */
+        .image-container {
+            width: 80px;  /* Fixed size to prevent distortion */
+            height: 80px; /* Fixed size to prevent distortion */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid white;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures full image is visible */
+        }
+
+        /* Button Text */
+        .button-text {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .button-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .button-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Crime Scene Tape -->
+    <div class="crime-tape">CRIME SCENE - DO NOT CROSS</div>
+
+    <div class="button-container">
+        <button onclick="window.location.href='/viewlopro'">
+            <div class="image-container">
+                <img src="static/profile.png" alt="Profile Icon">
+            </div>
+            <div class="button-text">View Profile</div>
+        </button>
+
+        <button onclick="window.location.href='/view'">
+            <div class="image-container">
+                <img src="static/view_case.png" alt="View Case Icon">
+            </div>
+            <div class="button-text">View Case</div>
+        </button>
+
+        <button onclick="window.location.href='/add_case'">
+            <div class="image-container">
+                <img src="static/add_case.png" alt="Add Case Icon">
+            </div>
+            <div class="button-text">Enter New Case</div>
+        </button>
+
+        <button onclick="window.location.href='/regloo'">
+            <div class="image-container">
+                <img src="static/add_lower.png" alt="Register Lower Official Icon">
+            </div>
+            <div class="button-text">Register New Lower Official</div>
+        </button>
+
+        <button onclick="window.location.href='/loo_changepasss'">
+            <div class="image-container">
+                <img src="static/change_password.png" alt="Change Password Icon">
+            </div>
+            <div class="button-text">Change Password</div>
+        </button>
+
+        <button onclick="window.location.href='/autregister'">
+            <div class="image-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/681/681392.png" alt="Warning Icon">
+            </div>
+            <div class="button-text">Spare Button - Don't Click</div>
+        </button>
+    </div>
+
+</body>
+</html>
