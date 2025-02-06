@@ -128,7 +128,6 @@ prov==2.0.1
 psutil==6.1.0
 pure_eval==0.2.3
 puremagic==1.28
-PyAudio==0.2.14
 PyAutoGUI==0.9.54
 pycryptodome==3.21.0
 pydantic==2.10.4
